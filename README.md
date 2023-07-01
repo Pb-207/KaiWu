@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 (3). 将项目目录中`example.config.ini`重命名为`config.ini`
 
-### 2. 部署后端LLM服务API
+### 2. 部署后端 LLM 服务 API
 
 - 使用 OpenAI API
 
@@ -51,7 +51,7 @@ pip install -r requirements.txt
 
 - 使用 oobabooga/text-generation-webui
 
-[text-generation-webui](https://github.com/oobabooga/text-generation-webui) 是一个功能全面且易于使用的开源LLM部署框架，支持几乎所有开源LLM，本项目推荐配合 [text-generation-webui](https://github.com/oobabooga/text-generation-webui) 使用；
+[text-generation-webui](https://github.com/oobabooga/text-generation-webui) 是一个功能全面且易于使用的开源 LLM 部署框架，支持几乎所有开源 LLM，本项目推荐配合 [text-generation-webui](https://github.com/oobabooga/text-generation-webui) 使用；
 
 (1). 克隆 text-generation-webui 仓库并安装依赖
 
