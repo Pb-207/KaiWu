@@ -69,9 +69,9 @@ pip install -r requirements.txt
 python server.py --extensions openai
 ```
 
-(3). 访问 text-generation-webui 的 webui 界面，根据需要加载模型并修改参数，需特别注意修改`max_new_tokens`, `Truncate the prompt up to this length`和`temperature`这三个参数（如果使用 exllama 还需注意修改`max_seq_len`和`compress_pos_emb`；
+(3). 访问 text-generation-webui 的 webui 界面，根据需要加载模型并修改参数，需特别注意修改`max_new_tokens`, `Truncate the prompt up to this length`和`temperature`这三个参数，如果使用 exllama 还需注意修改`max_seq_len`和`compress_pos_emb`；
 
-(4). 修改`config.ini`为 text-generation-webui 启用的 API Base 地址(如未专门配置默认为：http://127.0.0.1:5001/v1)；
+(4). 修改`config.ini`为 text-generation-webui 启用的 API Base 地址，如未专门配置默认为：`http://127.0.0.1:5001/v1`；
 
 ### 3. 配置参数
 
@@ -83,7 +83,7 @@ OpenAI 的 API Key
  
 - `openai_api_base`
 
-OpenAI 的 API 服务地址， 使用本地部署时须修改为本地 LLM 的 API 地址(text-generation-webui 的默认 API Base 地址为：`http://127.0.0.1:5001/v1`)
+OpenAI 的 API 服务地址， 使用本地部署时须修改为本地 LLM 的 API 地址，text-generation-webui 的默认 API Base 地址为：`http://127.0.0.1:5001/v1`
 
 **注意: 此处地址不是代理地址**，如使用 OpenAI 官方 API 此处请留空，代理地址在下面的`proxy_http`和`proxy_https`中配置；
 
@@ -147,7 +147,7 @@ Faiss 执行相似度搜索时返回结果的个数，LLM 将会基于相似度�
 
 LLM 推理时使用的采样温度，介于 0 和 2 之间。较高的值（如 0.8）将使输出更加随机，而较低的值（如 0.2）将使其更加集中和确定；
 
-- `\[PROMPTS\]`
+- `[PROMPTS]`
 
 LLM 推理时所使用的 prompt，一般情况下无需修改；
 
