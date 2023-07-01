@@ -6,15 +6,15 @@ An LLM PDF chat framework optimized for research articles and local deployment.
 
 ## 项目特点
 
-✅ 可在LLM有最大token限制的情况下，实现基于文本量远大于token限制的多篇论文对话；
+✅ 可在 LLM 有最大`token`限制的情况下，实现基于文本量远大于`token`限制的多篇论文对话；
 
-✅ 将LLM对单个文本块的回答拼接组合，重新分块后再次发给LLM生成回答，保证回答质量及内容完整性的同时避免因token限制或显存不足产生截断；
+✅ 将 LLM 对单个文本块的回答拼接组合，重新分块后再次发给 LLM 生成回答，保证回答质量及内容完整性的同时避免因`token`限制或显存不足产生截断；
 
-✅ 基于langchain和gradio构建的简单易用的webui界面；
+✅ 基于 langchain 和 gradio 构建的简单易用的 webui 界面；
 
 ✅ 生成的回答提供参考来源链接，通过点击链接一键定位到论文对应页面；
 
-✅ 针对本地部署优化，原生支持使用 OpenAI API 格式的 text-generation-webui、fastchat 等开源LLM部署框架；
+✅ 针对本地部署优化，原生支持使用 OpenAI API 格式的 text-generation-webui、fastchat 等开源 LLM 部署框架；
 
 ✅ 检测回答是否被截断并自动重新生成回答；
 
