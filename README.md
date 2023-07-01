@@ -1,6 +1,6 @@
 # KaiWu | 开物
 
-针对本地部署优化的开源LLM本地学术论文对话框架
+针对本地部署优化的开源 LLM 本地学术论文对话框架
 
 An LLM PDF chat framework optimized for research articles and local deployment.
 
