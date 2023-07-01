@@ -117,7 +117,7 @@ Embedding 时所使用的模型，默认模型效果较好，可使用`HuggingFa
 
 - `embedding_gpu`
 
-是否使用 GPU 进行 Embedding，使用 GPU 进行 Embedding 速度更快但需消耗较多显存从而导致留给推理使用的显存变少(测试300页PDF文档约消耗4GB显存用于Embedding)， 由于 Embedding 每次启动只需运行一次，故使用 CPU 进行 Embedding 可在不牺牲太多速度的情况下降低显存需求(使用一颗`EPYC 9654`Embedding 300页PDF需要约1分钟)
+是否使用 GPU 进行 Embedding，使用 GPU 进行 Embedding 速度更快但需消耗较多显存从而导致留给推理使用的显存变少(测试300页PDF文档约消耗4GB显存用于Embedding)， 由于 Embedding 每次启动只需运行一次，故使用 CPU 进行 Embedding 可在不牺牲太多速度的情况下降低显存需求(使用一颗`AMD EPYC 9654`Embedding 300页PDF需要约1分钟)
 
 - `faiss_threads`
 
