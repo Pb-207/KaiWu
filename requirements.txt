@@ -1,0 +1,10 @@
+configparser
+openai
+langchain
+tiktoken
+tqdm
+txtai
+sentence-transformers
+faiss-cpu
+gradio_client>=0.2.5
+gradio>=3.33.1
