@@ -14,10 +14,10 @@ def load_openai_configs(cfpath):
         openai.api_key = cf.get('OPENAI', 'openai_api_key')
     except:
         openai.api_key = input('No valid OpenAI API Key, please input OpenAI API Key: ')
-    try:
+        
+    if cf.get('OPENAI', 'openai_api_base'):
         openai.api_base = cf.get('OPENAI', 'openai_api_base')
-    except:
-        openai.api_base = 'https://api.openai.com/v1'
+        
     if cf.getboolean('OPENAI', 'enable_proxy'):
         proxies = {
             'http': cf.get('OPENAI', 'proxy_http'),
